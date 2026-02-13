@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Intan 🤍</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#fff1f4,#fdeff2,#fff7ec);
+    color:#5a2a2a;
+    overflow-x:hidden;
+}
+section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    padding:40px 20px;
+    text-align:center;
+}
+h1,h2{
+    font-family:'Playfair Display',serif;
+}
+.fade{
+    opacity:0;
+    transform:translateY(20px);
+    transition:1s;
+}
+.fade.show{
+    opacity:1;
+    transform:none;
+}
+button{
+    background:#a8324a;
+    color:#fff;
+    border:none;
+    padding:14px 28px;
+    border-radius:40px;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:25px;
+    transition:.3s;
+}
+button:hover{
+    transform:scale(1.05);
+    background:#8f293f;
+}
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    max-width:1000px;
+}
+.card{
+    background:rgba(255,255,255,.7);
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.4s;
+}
+.card:hover{transform:translateY(-8px)}
+.card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+.card p{
+    padding:18px;
+    font-size:14px;
+    line-height:1.7;
+}
+.hidden{
+    display:none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- OPENING -->
+<section>
+    <h1 class="fade">Hai Intan 🤍</h1>
+    <p class="fade" style="max-width:520px;margin-top:18px">
+        Ada sebuah ruang kecil yang sengaja aku bangun hanya untuk kamu.  
+        Isinya bukan barang mahal, tapi potongan rasa, kenangan, tawa, dan doa.
+    </p>
+    <p class="fade" style="margin-top:15px;font-style:italic">
+        Kalau kamu siap, ayo kita masuk pelan-pelan...
+    </p>
+    <button onclick="next()">Masuk ke Dunia Kita ✨</button>
+</section>
+
+<!-- STORY -->
+<section class="hidden">
+    <h2 class="fade">Cerita Singkat Kita</h2>
+    <p class="fade" style="max-width:600px;margin-top:25px">
+        Dari awal kenal yang biasa aja, sampai akhirnya jadi dua orang yang
+        saling nyaman. Kita pernah ketawa sampai lupa waktu, pernah ngambek
+        karena hal kecil, pernah capek, tapi tetap milih bertahan.
+        <br><br>
+        Dan dari semua perjalanan itu, aku sadar:
+        <b>kamu bukan sekadar pasangan, tapi rumah.</b>
+    </p>
+    <button onclick="next()">Lihat Kenangan Kita 📸</button>
+</section>
+
+<!-- GALLERY -->
+<section class="hidden">
+    <h2 class="fade">Potongan Kenangan Kita</h2>
+
+    <div class="gallery fade">
+
+<div class="card">
+    <img src="./1.jpg">
+    <p>
+        Di depan laut, kita belajar bahwa kebahagiaan nggak harus mewah.
+        Cukup berdiri berdua, ditemani ombak, dan rasa tenang karena saling ada.
+    </p>
+</div>
+
+<div class="card">
+    <img src="./2.jpg">
+    <p>
+        Senyum kamu di foto ini selalu jadi pengingat,
+        bahwa hal paling indah dalam hidupku seringkali sesederhana:
+        melihat kamu bahagia.
+    </p>
+</div>
+
+<div class="card">
+    <img src="./3.jpg">
+    <p>
+        Kita mungkin nggak sempurna, tapi di momen ini,
+        aku ngerasa lengkap. Karena kamu di sampingku.
+    </p>
+</div>
+
+<div class="card">
+    <img src="./4.jpg">
+    <p>
+        Hari-hari sederhana, seragam sekolah, jalan bareng —
+        ternyata justru jadi kenangan paling mahal saat dikenang.
+    </p>
+</div>
+
+<div class="card">
+    <img src="./5.jpg">
+    <p>
+        Senja, laut, dan genggaman tangan.
+        Tiga hal yang selalu bikin aku yakin,
+        bahwa bersamamu adalah keputusan yang tepat.
+    </p>
+</div>
+
+<div class="card">
+    <img src="6.jpg">
+    <p>
+        Di balik ekspresi lucu dan momen receh ini,
+        tersimpan rasa nyaman yang jarang bisa dijelaskan dengan kata-kata.
+    </p>
+</div>
+
+    </div>
+
+    <button onclick="next()">Ada Kejutan 💌</button>
+</section>
+
+<!-- SURPRISE -->
+<section class="hidden">
+    <h2 class="fade">Untuk Kamu, Intan 🤍</h2>
+    <p class="fade" style="max-width:600px;margin-top:25px">
+        Terima kasih sudah hadir di hidupku.  
+        Terima kasih sudah sabar menghadapi sifatku.  
+        Terima kasih sudah bertahan, meski kadang aku bikin lelah.
+        <br><br>
+        Aku nggak janji jadi yang paling sempurna,
+        tapi aku janji akan selalu belajar jadi yang terbaik buat kamu.
+        <br><br>
+        Semoga ke depan, kita nggak cuma berbagi tawa,
+        tapi juga mimpi, perjuangan, dan masa depan.
+    </p>
+    <p class="fade" style="margin-top:30px;font-style:italic">
+        Happy Valentine, Intan 🤍  
+        Kamu adalah hadiah terindah dalam hidupku.
+    </p>
+</section>
+
+<script>
+let current = 0;
+const sections = document.querySelectorAll("section");
+
+function next(){
+    sections[current].classList.add("hidden");
+    current++;
+    sections[current].classList.remove("hidden");
+
+    setTimeout(()=>{
+        document.querySelectorAll(".fade").forEach(el=>{
+            el.classList.add("show");
+        })
+    },100);
+}
+
+document.querySelectorAll(".fade").forEach(el=>{
+    el.classList.add("show");
+});
+</script>
+
+</body>
+</html>
